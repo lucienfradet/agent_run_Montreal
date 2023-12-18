@@ -1,0 +1,44 @@
+{
+  "yearlyData": {
+    "2016": {
+      "tenantRatio": {
+        "low": 23.9,
+        "mid": 49.6,
+        "high": 26.6
+      },
+      "vacancyRate": 3.9,
+      "income": {
+        "low": 16.8,
+        "lowTargetValue": 18000,
+        "lowWeight": 1.5,
+        "mid": 43.6,
+        "midTargetValue": 50000,
+        "midWeight": 3.0,
+        "high": 60,
+        "highTargetValue": 100000,
+        "highWeight": 1.5
+      },
+      "rentPrice": {
+        "average": 762.5,
+        "rentVariabilityUp": 100,
+        "rentVariabilityDown": 60,
+        "rentWeight": 2.0
+      },
+      "numLogement": 493365,
+      "population": 815500
+    },
+    "2022": {
+      "RCLALQ": {
+        "population": 2020000,
+        "numLogement": 430592,
+        "rentMoyNoMove": 963,
+        "rentMoyNoMoveIncreaseFromLastYear%": 3.47,
+        "rentMoyMove": 1235,
+        "rentMoyMoveIncreaseFromLastYear%": 14.51,
+        "rentMoyKijiji": 1470,
+        "rentMoyKijijiVaration": 103
+      }
+    }
+  },
+  "beyondMeans%": 30
+}
