@@ -100,9 +100,9 @@ function display_model(model, index)
         plotkwargs...
     )
     screen = display(figure)  # Display the figure
-    path = "images/render_1_" * string(index) * ".png"
-    save(path, figure, resolution=(1600, 888))
-    resize!(screen, 1600, 888)
+    # path = "images/render_1_" * string(index) * ".png"
+    # save(path, figure, resolution=(1600, 888))
+    # resize!(screen, 1600, 888)
 end
 
 
@@ -114,7 +114,7 @@ itterateSchelling(schellingItterations)
 include("rental_model.jl")
 
 
-for i in 1:60
+for i in 1:1
     itterate_rent_model(rentalModel, 1)
     display_model(rentalModel, i)
 end
@@ -122,7 +122,7 @@ end
 # itterate_rent_model(rentalModel, 15)
 # display_model(rentalModel)
 
-# ################## Plotting graphs ##############
+####################### Plotting graphs ############################
 adata = []
 get_average_rent(model) = model.properties[:rentTrueAverage]
 get_vacancy_rate_data(model) = round(model.properties[:vacancyRate], digits=4)
@@ -181,7 +181,7 @@ end
 #     global index += 1
 # end
 
-# ########### Interactive Model Tests #################
+################## Interactive Model Tests ######################
 
 # getBackgroundArray(model) = model.properties[:background]
 # figure, abmobs = abmplot(
